@@ -1,0 +1,34 @@
+clauses
+	country(1, "Australia", australia, 26).
+	country(2, "Egypt", africa, 80).
+	country(3, "China", asia, 1411).
+	country(4, "USA", america, 336).
+	country(5, "Spain", europe, 336).
+
+      capital(1, "Canberra", 0.453).
+      capital(2, "Cairo", 10).
+      capital(3, "Beijing", 21).
+      capital(4, "Washington", 0.689).
+      capital(5, "Madrid", 3).
+
+      present(1, 1).
+      present(2, 2).
+      present(3, 3).
+      present(4, 4).
+      present(5, 5).
+
+      ethnicity(1, "Egyptians").
+      ethnicity(2, "Italians").
+      ethnicity(3, "Chinese").
+      ethnicity(4, "Spanish").
+
+      lives_here(2, 1).
+      lives_here(2, 2).
+      lives_here(4, 3).
+      lives_here(4, 2).
+      lives_here(4, 1).
+      lives_here(3, 3).
+      lives_here(5, 2).
+      lives_here(5, 4).
+	lives_here(1, 2).
+	lives_here(1, 4).
