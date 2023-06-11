@@ -20,24 +20,3 @@ clauses
 	lives_here(2,1).
 	lives_here(2,2).
 	lives_here(3,3).
-
-
-find_capital(Capital,World) :-
-    capital(Id_Capital,Capital,_),
-    country(Id_Country,_,World,_),
-    present(Id_Capital,Id_Country).
-
-find_world(Id_Capital,World) :-
-    capital(Id_Capital,Capital,_),
-    country(Id_Country,_,World,_),
-    present(Id_Capital,Id_Country).
-
-find_ethnicity(World, Et_Name):-
-    country(Id_country, _, World, _),
-    ethnicity(Id_ethnicity,Et_Name),
-    lives_here(Id_country,Id_ethnicity).
-
-where_more(First_Id,Second_Id,Res_Id):-
-    country(First_Id,First_Name,_,First_Population),
-    country(Second_Id,Second_Name,_,Second_Population),
-    First_Population<Second_Population,!,Res_Id is Second_Name; Res_Id is First_Name.
