@@ -1,0 +1,22 @@
+clauses
+	country(1,"Egypt",africa,80).
+	country(2,"China",asia,1411).
+	country(3,"England",europe,336).
+
+      	capital(1,"Cairo",10).
+	capital(2,"Beijing",21).
+	capital(3, "London",9).
+
+
+      	present(1, 1).
+	present(2, 2).
+	present(3, 3)..
+
+	ethnicity(1,"Egyptians").
+	ethnicity(3,"Chinese").
+	ethnicity(4,"Briton").
+
+      	lives_here(1,1).
+	lives_here(2,1).
+	lives_here(2,2).
+	lives_here(3,3).
